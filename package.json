@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "nodemon -e ts -w ./src -x npx ts-node src/index.ts",
     "prod": "NODE_ENV=production npx ts-node src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "collection:test": "newman run notes-app.postman_collection.json --environment notes-app.postman_environment.json"
   },
   "keywords": [],
   "author": "",
